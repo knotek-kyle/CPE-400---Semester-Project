@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controller</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Car Controller</h1>
+        <form id="controller-form">
+
+        </form>
+    </header>
+
+    <main>
+
+        <style>
+            .dpad {float: left;}
+            .dpad section {width: 50%; float: left;}
+        </style>
+        <section class="dpad">
+            <h2>Car Direction</h2>
+            
+            <div>
+                <input 
+                type="button"
+                id="up-button" 
+                value="^">
+            </div>
+            <div>
+                <input 
+                type="button" 
+                id="left-button"
+                value="<">
+                <input type="button" 
+                id="right-button"
+                value=">">
+            </div>
+            <div>
+                <input 
+                type="button"
+                id="down-button" 
+                value="v">
+            </div>
+            <div>
+                <span class = "light-label">Light</span>
+            </div>
+            <div>     
+                <label class="switch">
+                    <input type="checkbox" id="togBtn">
+                    <div class="slider round">
+                     <!--ADDED HTML -->
+                     <span class="on">ON</span>
+                     <span class="off">OFF</span>
+                     <!--END-->
+                    </div>
+                   </label>
+            </div>
+
+
+        </section>
+        <section class="video-feed">
+            <div>
+                <span class = "video-label">Video Feed</span>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="main.js"></scriptsrc></script>
+</body>
+</html>

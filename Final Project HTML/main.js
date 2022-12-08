@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     let leftbutton = document.querySelector('#left-button');
     let rightbutton = document.querySelector('#right-button');
     let downbutton = document.querySelector('#down-button');
-    let lighton = document.querySelector('#togBtn');
+    let lighttoggle = document.querySelector('#togBtn');
     
     upbutton.addEventListener('click', ()=>{
         alert("Up Pressed");
@@ -19,7 +19,12 @@ window.addEventListener('load', () => {
     downbutton.addEventListener('click', ()=>{
         alert("Down Pressed");
     })
-    lighton.addEventListener('on', ()=>{
-        alert("Light On");
+    lighttoggle.addEventListener('click', () =>{
+        if(lighttoggle.checked){
+            alert("Light On");
+        }
+        else{
+            alert("Light Off");
+        }
     })
 })

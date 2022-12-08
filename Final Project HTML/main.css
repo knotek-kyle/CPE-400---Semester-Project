@@ -80,6 +80,7 @@ section.video-feed{
     border-radius: 8px;
     border:2px solid var(--lightgrey);
     margin-left: 22rem;
+    margin-right: 1rem;
 }
 
 #up-button{
